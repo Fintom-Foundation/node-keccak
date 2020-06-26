@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/phusion/node-sha3.git"
+    "url": "git://github.com/Fintom-Foundation/node-sha3.git"
   },
   "main": "build/Release/sha3",
   "scripts": {
