@@ -2,13 +2,9 @@
 
 This Node.js extension implements the SHA-3 ([Keccak](http://keccak.noekeon.org/)) cryptographic hashing algorithm. It is based on the reference C implementation, version 3.2. The exposed interface is almost identical to that of the `crypto` standard library.
 
-[![Build Status](https://travis-ci.org/phusion/node-sha3.svg?branch=master)](https://travis-ci.org/phusion/node-sha3)
-
-[<img src="http://www.phusion.nl/assets/logo.png">](http://www.phusion.nl/)
-
 ## Installation
 
-    npm install sha3
+    npm install @fintom/sha3
 
 ## Usage
 
@@ -54,6 +50,3 @@ It requires that you have Python 2.7 installed and available via the
 
 Do not use SHA-3 for hashing passwords. Do not even use SHA-3 + salt for hashing passowords. Use a [slow hash](http://codahale.com/how-to-safely-store-a-password/) instead.
 
-## See also
-
-[Digest::SHA3 for Ruby](https://github.com/phusion/digest-sha3-ruby)

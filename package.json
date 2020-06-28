@@ -22,10 +22,16 @@
   "directories": {
     "test": "test"
   },
-  "author": {
-    "name": "Hongli Lai (Phusion)",
-    "email": "hongli@phusion.nl"
-  },
+  "authors": [
+    {
+      "name": "Hongli Lai (Phusion)",
+      "email": "hongli@phusion.nl"
+    },
+    {
+      "name": "Ray Li",
+      "email": "ray.li.cmd@gmail.com"
+    }
+  ],
   "license": "MIT",
   "engines": {
     "node": ">= 0.10",
@@ -36,6 +42,8 @@
   },
   "devDependencies": {
     "@types/node": "^14.0.14",
-    "mocha": "^2.1.0"
+    "mocha": "^8.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
   }
 }
