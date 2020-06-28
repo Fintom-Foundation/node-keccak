@@ -1,6 +1,6 @@
 {
   "name": "@fintom/sha3",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Node.js C++ extension for SHA-3 (Keccak)",
   "keywords": [
     "sha",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git://github.com/Fintom-Foundation/node-sha3.git"
   },
-  "main": "build/Release/sha3",
+  "main": "index.js",
   "scripts": {
     "install": "node-gyp rebuild",
     "test": "python test/generate_tests.py > test/test_vectors.js && node test/test_vectors.js && mocha test/unit_tests.js"
@@ -43,6 +43,7 @@
   "devDependencies": {
     "@types/node": "^14.0.14",
     "mocha": "^8.0.0",
+    "rimraf": "^2.6.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   }

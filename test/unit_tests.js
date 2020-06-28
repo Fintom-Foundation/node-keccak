@@ -1,6 +1,5 @@
 var assert = require('assert');
-var util   = require('util');
-var SHA3 = require('../').SHA3Hash;
+var SHA3 = require('../index');
 
 describe('SHA3', function(){
 
