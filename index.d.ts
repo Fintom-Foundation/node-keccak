@@ -1,19 +1,19 @@
 /// <reference types="node" />
-export interface SHA3Hash {
+export interface Keccak {
   /**
-   * Update the SHA3 Hash Content
+   * Update the Keccak Hash Content
    * @param input The Input String or Buffer
    */
-  update(input?: string | Buffer): SHA3Hash;
+  update(input?: string | Buffer): Keccak;
   /**
-   * Digest the SHA3 Hash Content
+   * Digest the Keccak Hash Content
    * @param format The Hash Output Format (default as binary)
    */
   digest(format?: 'binary' | 'hex'): string;
 }
-export declare var SHA3Hash: {
+export declare var Keccak: {
   /**
-   * The Constructor for creating a byte array (default is SHA3-512)
+   * The Constructor for creating a byte array (default is Keccak-512)
    */
-  new (bytes?: 224 | 256 | 384 | 512): SHA3Hash;
+  new (bytes?: 224 | 256 | 384 | 512): Keccak;
 };

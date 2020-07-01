@@ -1,17 +1,17 @@
 {
-  "name": "@fintom/sha3",
-  "version": "1.0.2",
-  "description": "A Node.js C++ extension for SHA-3 (Keccak)",
+  "name": "@fintom/keccak",
+  "version": "1.0.0",
+  "description": "A Node.js C++ extension for Keccak",
   "keywords": [
     "sha",
-    "sha3",
+    "keccak",
     "sha-3",
-    "hash",
+    "nodejs",
     "hashing"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Fintom-Foundation/node-sha3.git"
+    "url": "git://github.com/Fintom-Foundation/node-keccak.git"
   },
   "main": "index.js",
   "scripts": {

@@ -1,28 +1,28 @@
-# A Node.js C++ extension for SHA-3 (Keccak)
+# A Node.js C++ extension for Keccak
 
-This Node.js extension implements the SHA-3 ([Keccak](http://keccak.noekeon.org/)) cryptographic hashing algorithm. It is based on the reference C implementation, version 3.2. The exposed interface is almost identical to that of the `crypto` standard library.
+This Node.js extension implements the Keccak ([Keccak](http://keccak.noekeon.org/)) cryptographic hashing algorithm. It is based on the reference C implementation, version 3.2. The exposed interface is almost identical to that of the `crypto` standard library.
 
 ## Installation
 
-    npm install @fintom/sha3
+    npm install @fintom/keccak
 
 ## Usage
 
 Keccak supports 5 hash lengths: 224-bit, 256-bit, 384-bit, 512-bit and variable length. Variable length is not supported by this Node.js extension. Unless the user specifies otherwise, this Node.js extension assumes 512-bit.
 
-    var SHA3 = require('sha3');
+    var { Keccak } = require('@fintom/keccak');
 
     // Generate 512-bit digest.
-    var d = new SHA3.SHA3Hash();
+    var d = new Keccak();
     d.update('foo');
     d.digest('hex');   // => "1597842a..."
 
     // Generate 224-bit digest.
-    var d = new SHA3.SHA3Hash(224);
+    var d = new Keccak(224);
     d.update('foo');
     d.digest('hex');   // => "daa94da7..."
 
-### new SHA3Hash([hashlen])
+### new Keccak([hashlen])
 
 This is the hash object. `hashlen` is 512 by default.
 
@@ -34,7 +34,7 @@ Updates the hash content with the given data, the encoding of which is given in 
 
 Calculates the digest of all of the passed data to be hashed. The encoding can be `'hex'` or `'binary'`. Defaults to `'binary'`.
 
-Note: unlike `crypto.Hash`, a `SHA3Hash` object _can_ still be used after the `digest()` method been called.
+Note: unlike `crypto.Hash`, a `Keccak` object _can_ still be used after the `digest()` method been called.
 
 ## Running the test suite
 
@@ -48,5 +48,5 @@ It requires that you have Python 2.7 installed and available via the
 
 ## Warning
 
-Do not use SHA-3 for hashing passwords. Do not even use SHA-3 + salt for hashing passowords. Use a [slow hash](http://codahale.com/how-to-safely-store-a-password/) instead.
+Do not use Keccak for hashing passwords. Do not even use Keccak + salt for hashing passowords. Use a [slow hash](http://codahale.com/how-to-safely-store-a-password/) instead.
 

@@ -1,3 +1,3 @@
 "use strict";
-const sha3 = require('./build/Release/sha3').SHA3Hash;
-exports.SHA3Hash = sha3;
+const keccak = require('./build/Release/sha3').SHA3Hash;
+exports.Keccak = keccak;
